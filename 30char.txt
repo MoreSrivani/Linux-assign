@@ -1,0 +1,11 @@
+Print the lines having greater than 30 char in File1.txt
+
+awk  'length>30' li17.txt
+
+Remove the lines having greater than 30 char and store it in File2.txtCheck
+
+sed '/.\{30\}/d' <li17.txt >outli.txt
+
+Remove the Dot (.) or EndPeriod if it is in the end of the line and store it in File3.txt 
+
+sed 's/\.//' <li17.txt >output.txt
